@@ -7,19 +7,19 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #a9a9a9;
+  background-color: #28273c;
 }
 
 body {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Sonsie One', cursive;
-  color: #2a2a2a;
+  font-family: 'Verdana', cursive;
+  color: #000000;
 }
 
 p, input, li {
