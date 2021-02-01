@@ -9,7 +9,7 @@
 	<body>
 		<script>
 			
-			function fun(ctx)
+			function fun(ctx, j)
 			{
 				ctx.arc(100, 75, 50, j*(2 * Math.PI/10), (j+1)*(2 * Math.PI/10) );
 			}
@@ -18,7 +18,7 @@
 			var ctx = c.getContext("2d");
 			ctx.beginPath();
 			for (j=0;j<10;j++){
-				setTimeout(fun(ctx) {
+				setTimeout(fun(ctx, j) {
 				}, ((j+1)*2000));
 			}
 			ctx.stroke();
