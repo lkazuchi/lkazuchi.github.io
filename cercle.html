@@ -8,11 +8,19 @@
 #d3d3d3;">
 	<body>
 		<script>
+			// sleep time expects milliseconds
+			function sleep (time) {
+  			return new Promise((resolve) => setTimeout(resolve, time));
+			}
+
+
 			var c = document.getElementById("myCanvas");
 			var ctx = c.getContext("2d");
 			ctx.beginPath();
-			for(j=1;j<100000;j++){
-				ctx.arc(100, 75, 50, 0, 2 * Math.PI/100000);
+			for(j=1;j<10;j++){
+				sleep(500).then(() => {
+				ctx.arc(100, 75, 50, 0, 2 * Math.PI/10);
+				});
 			ctx.stroke();
 		</script>
     </body>
