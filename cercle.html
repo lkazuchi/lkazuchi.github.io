@@ -19,10 +19,9 @@ setTimeout(function() {
 			ctx.beginPath();
 			for(j=0;j<10;j++){
 				setTimeout(function() {
-					alert("Hello");	
-				}, (4*1000));
-				ctx.arc(100, 75, 50, j*(2 * Math.PI/10), (j+1)*(2 * Math.PI/10) );
-				}
+					ctx.arc(100, 75, 50, j*(2 * Math.PI/10), (j+1)*(2 * Math.PI/10) );	
+				}, ((j+1)*1000));
+			}
 			ctx.stroke();
 		</script>
     </body>
