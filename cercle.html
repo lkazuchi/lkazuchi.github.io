@@ -14,8 +14,8 @@
 			var c = document.getElementById("myCanvas");
 			var ctx = c.getContext("2d");
 			ctx.beginPath();
-			for(j=0;j<10;j++){
-				ctx.arc(100, 75, 50, j*(2 * Math.PI/10), (j+1)*(2 * Math.PI/10) );
+			for(j=0;j<10000;j++){
+				ctx.arc(100, 75, 50, j*(2 * Math.PI/10000), (j+1)*(2 * Math.PI/10000) );
 				}
 			ctx.stroke();
 		</script>
