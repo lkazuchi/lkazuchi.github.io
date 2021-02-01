@@ -8,13 +8,17 @@
 #d3d3d3;">
 	<body>
 		<script>
+			
+			function fun(ctx)
+			{
+				ctx.arc(100, 75, 50, j*(2 * Math.PI/10), (j+1)*(2 * Math.PI/10) );
+			}
+			
 			var c = document.getElementById("myCanvas");
 			var ctx = c.getContext("2d");
 			ctx.beginPath();
 			for (j=0;j<10;j++){
-				setTimeout(function(ctx) {
-					ctx.arc(100, 75, 50, j*(2 * Math.PI/10), (j+1)*(2 * Math.PI/10) );
-					alert("Hello");
+				setTimeout(fun(ctx) {
 				}, ((j+1)*2000));
 			}
 			ctx.stroke();
