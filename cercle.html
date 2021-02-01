@@ -8,14 +8,19 @@
 #d3d3d3;">
 	<body>
 		<script>
-			
+			var b;
+setTimeout(function() {
+    b = a + 4;
+}, (3 * 1000));
 
 
 			var c = document.getElementById("myCanvas");
 			var ctx = c.getContext("2d");
 			ctx.beginPath();
-			for(j=0;j<100000;j++){
-				ctx.arc(100, 75, 50, j*(2 * Math.PI/100000), (j+1)*(2 * Math.PI/100000) );
+			for(j=0;j<10;j++){
+				setTimeout(function() {
+					ctx.arc(100, 75, 50, j*(2 * Math.PI/10), (j+1)*(2 * Math.PI/10) );
+				}, (1*1000));
 				}
 			ctx.stroke();
 		</script>
