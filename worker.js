@@ -1,5 +1,6 @@
 function drawCircle(x, y) {
   const c = document.getElementById("myCanvas");
+  console.log(12);
   let ctx = c.getContext("2d");
   ctx.beginPath();
   ctx.arc(10 * x, 10 * y, 5, 0, 2 * Math.PI);
