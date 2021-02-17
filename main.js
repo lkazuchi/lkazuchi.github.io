@@ -32,8 +32,8 @@ const duree = 50;
 let interval = setInterval(function () {
   let x = Math.random() * (max - min) + min;
   let y = Math.random() * (max - min) + min;
-  first.postMessage([first.value, second.value]);
-  second.postMessage([first.value, second.value]);
+  first.myWorker.postMessage([first.value, second.value]);
+  second.myWorker.postMessage([first.value, second.value]);
   console.log("Messages posted to worker");
   if (++j === duree) {
     clearInterval(interval);
