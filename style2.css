@@ -13,10 +13,10 @@ h1 {
 }
 
 h2 {
-  margin: 1;
+  margin: -1;
   font-size: 15vw;
   letter-spacing: -0.2rem;
-  position: relative;
+  position: absolute;
   top: 0;
   z-index: -1;
 }
